@@ -679,32 +679,3 @@ iframe {
 		height: 30px;
 	}
 }
-
-@media (max-width: 810px) {
-	.logo {
-		height: 45px;
-	}
-	.navigation {
-		font-size: 10px;
-		width: 30%;
-	}
-	.icons-container .icon {
-		width: 15px;
-		padding: 15px;
-	}
-	.navigation-item .one {
-		left: 0;
-	}
-	.navigation-item .two {
-		left: 340px;
-	}
-	.navigation-item .three {
-		left: 456px;
-	}
-	.navigation-item .four {
-		left: 563px;
-	}
-	.navigation-item .five {
-		left: 671px;
-	}
-}
