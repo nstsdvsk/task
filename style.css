@@ -54,13 +54,13 @@ a {
 }
 .icons-container {
 	width: 30%;
-	text-align: right;
+	text-align: center;
 }
-.icons-container .icon {
+.icons-container i {
 	display: inline-block;
 	cursor:  pointer;
-	padding: 25px;
-	width: 10%;
+	padding: 30px;
+	font-size: 45px;
 }
 /*Стилі для випадаючого меню та його організації*/
 .navigation .navigation-item .menu-container {
@@ -70,19 +70,19 @@ a {
 	background-color: #2b2b2b;
 }
 .navigation-item .one {
-	left: 480px;
+	left: 435px;
 }
 .navigation-item .two {
-	left: 590px;
+	left: 550px;
 }
 .navigation-item .three {
-	left: 747px;
+	left: 720px;
 }
 .navigation-item .four {
-	left: 897px;
+	left: 881px;
 }
 .navigation-item .five {
-	left: 1044px;
+	left: 1036px;
 }
 .menu-container .menu {
 	padding: 20px;
@@ -92,6 +92,7 @@ a {
 	border: none;
 }
 .navigation li {
+	font-size: 18px;
 	padding: 6% 4%;
 	border-bottom: 2px solid black;
 	transition: all 0.3s ease;
@@ -120,8 +121,8 @@ a {
 	color:  white;
 }
 .navigation {
+	padding-left: 15px;
 	width: 45%;
-	margin-left: auto;
 	list-style: none;
 	display: flex;
 }
@@ -214,11 +215,10 @@ a {
 	display: flex;
 	background: none;
 }
-.all img {
-	background: none;
+.all i {
 	margin-left: 25px;
-	margin-top: 23px;
- 	height: 50px;
+	margin-top: 25px;
+ 	font-size: 40px;
  	display: block;
 }
 
@@ -437,6 +437,8 @@ iframe {
 	display: inline-block;
 	vertical-align: middle;
 }
+
+/*Робота з контейнером benefits-container*/
 .benefits-container {
 	padding-top: 70px;
 	background-color: white;
@@ -454,15 +456,17 @@ iframe {
 	flex: 33%;
 }
 .benefit a {
-	color: orangered;
+	color: orange;
 	text-decoration: underline;
 }
 .row .description {
 	flex: 33%;
 	margin: 23px;
 }
-.benefit img {
-	padding-bottom: 15px;
+.benefit i {
+	color: orange;
+	font-size: 40px;
+	padding-bottom: 10px;
 }
 .benefit h3, .row .description h2 {
 	padding-bottom: 25px;
@@ -489,14 +493,15 @@ iframe {
 	background-color: orange;
 	color: white;
 }
-.pre-footer-image .uptotop img {
-	width: 50%;
-	height: 50%;
-	padding-top: 25px;
+.pre-footer-image .uptotop i {
+	font-size: 50px;
+	padding-top: 35px;
+	padding-left: 12px;
+	margin-right: 10px;
 	display: block;
 }
 .pre-footer-image .uptotop .text {
-	padding-top: 30px;
+	padding-top: 33px;
 	font-size: 15px;
 	text-align: center;
 }
@@ -542,12 +547,11 @@ iframe {
 .contact p {
 	font-size: 14px;
 }
-.contact img {
-	padding-right: 10px;
-	display: block;
+.contact i {
+	font-size: 25px;
 	padding-top: 30px;
-	width: 30px;
-	height: 30px;
+	margin-right: 10px;
+	color: orange;
 }
 .footer-container a {
 	color: white;
@@ -571,10 +575,11 @@ iframe {
 	height: 70px;
 }
 .copyright .social-media {
-	padding-left: 130px;
+	padding-left: 200px;
 }
-.copyright .social-media img {
-	height: 45px;
+.copyright .social-media i {
+	color: white;
+	font-size: 40px;
 }
 .copyright img {
 	height: 100px;
@@ -589,25 +594,29 @@ iframe {
 }
 
 
+
+
+
+
 /*Адаптація параметрів під різні розміри девайсів*/
 @media (max-width: 1200px){
 	.navigation {
 		padding-right: 70px;
 	}
 	.navigation .navigation-item .menu-container {
-		margin-top: 38px;
+		margin-top: 30px;
 	}
 	.navigation-item .one {
-		left: 263px;
+		left: 278px;
 	}
 	.navigation-item .two {
-		left: 340px;
+		left: 368px;
 	}
 	.navigation-item .three {
-		left: 456px;
+		left: 513px;
 	}
 	.navigation-item .four {
-		left: 563px;
+		left: 648px;
 	}
 	.navigation-item .five {
 		left: 671px;
@@ -622,16 +631,27 @@ iframe {
 		width: 100%;
 		justify-content: start;
 	}
-	.icons-container .icon {
-		width: 30px;
+	.icons-container {
+		padding-top: 5px;
+		width: 20%;
+		padding-left: 25px;
+	}
+	.icons-container i {
+		padding: 15px;
+		font-size: 25px;
 	}
 	.logo {
 		padding-left: 50px;
 		height: 65px;
 	}
+	.navigation>li {
+		padding: 25px;
+		font-size: 15px;
+	}
 	.navigation {
-		font-size: 13px;
-		width: 40%;
+		padding: 0;
+		width: 50%;
+		justify-content: center;
 		margin: 0;
 	}
 	.instagram-container {
@@ -653,7 +673,7 @@ iframe {
 	.actions .buy>p, .actions .like>p {
 		font-size: 13px;
 	}
-	.actions .buy>img, .actions .like>img {
+	.actions .buy>i, .actions .like>i {
 		display: none;
 	}
 	.video-container {
@@ -669,13 +689,19 @@ iframe {
 	.subscribe button, .subscribe input {
 		width: 200px;
 	}
+	.copyright {
+		height: 80px;
+	}
 	.copyright .logo, .copyright .solutions-logo {
-		height: 70px;
+		height: 50px;
+	}
+	.copyright .solutions-logo {
+		padding-top: 20px;
 	}
 	.copyright .cards {
 		height: 40px;
 	}
-	.copyright .social-media img {
-		height: 30px;
+	.copyright .social-media i {
+		font-size: 30px;
 	}
 }
