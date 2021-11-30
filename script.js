@@ -61,3 +61,29 @@ document.addEventListener('DOMContentLoaded', function () {
         scrollTo(0, 400);
     }
 });
+
+/*Організація роботи бургера для девайсів з шириною екрану менше 950 пікселів*/
+document.getElementById('burger').onclick = function() {
+  document.getElementById('burger').classList.toggle('active');
+  document.getElementById('navigation').classList.toggle('active');
+}
+document.getElementById('a-one').onclick = function() {
+  document.getElementById('one').classList.toggle('active');
+  document.getElementById('one').classList.remove('menu-container');
+}
+document.getElementById('a-two').onclick = function() {
+  document.getElementById('two').classList.toggle('active');
+  document.getElementById('two').classList.remove('menu-container');
+}
+document.getElementById('a-three').onclick = function() {
+  document.getElementById('three').classList.toggle('active');
+  document.getElementById('three').classList.remove('menu-container');
+}
+document.getElementById('a-four').onclick = function() {
+  document.getElementById('four').classList.toggle('active');
+  document.getElementById('four').classList.remove('menu-container');
+}
+document.getElementById('a-five').onclick = function() {
+  document.getElementById('five').classList.toggle('active');
+  document.getElementById('five').classList.remove('menu-container');
+}

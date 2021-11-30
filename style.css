@@ -62,6 +62,9 @@ a {
 	padding: 30px;
 	font-size: 45px;
 }
+.burger {
+	display: none;
+}
 /*Стилі для випадаючого меню та його організації*/
 .navigation .navigation-item .menu-container {
 	position: absolute;
@@ -599,32 +602,43 @@ iframe {
 
 
 /*Адаптація параметрів під різні розміри девайсів*/
+@media (max-width: 1450px){
+	.icons-container {
+		padding: 15px 0 0 25px;
+	}
+	.icons-container i {
+		font-size: 25px;
+		padding: 20px;
+	}
+}
+
 @media (max-width: 1200px){
 	.navigation {
 		padding-right: 70px;
 	}
 	.navigation .navigation-item .menu-container {
-		margin-top: 30px;
+		margin-top: 27px;
 	}
 	.navigation-item .one {
-		left: 278px;
+		left: 248px;
 	}
 	.navigation-item .two {
-		left: 368px;
+		left: 341px;
 	}
 	.navigation-item .three {
-		left: 513px;
+		left: 481px;
 	}
 	.navigation-item .four {
-		left: 648px;
+		left: 613px;
 	}
 	.navigation-item .five {
-		left: 671px;
+		left: 740px;
 	}
 	.menu-container>.menu {
 		padding: 15px;
 	}
-	.menu .menu-item {
+	.menu .menu-item, .menu-item>ul>li {
+		font-size: 13px;
 		padding: 5px;
 	}
 	.navigation-container {
@@ -653,6 +667,20 @@ iframe {
 		width: 50%;
 		justify-content: center;
 		margin: 0;
+	}
+	.arrows {
+		height: 35px;
+		width: 35px;
+		top: 450px;
+	}
+	.prev {
+		left: 70px;
+	}
+	.next {
+		right: 70px;
+	}
+	.slider-container button {
+		left: 38%;
 	}
 	.instagram-container {
 		flex-direction: column;
@@ -703,5 +731,259 @@ iframe {
 	}
 	.copyright .social-media i {
 		font-size: 30px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.navigation-container {
+		justify-content: center;
+	}
+	.navigation {
+		padding-left: 10px;
+	}
+	.navigation-item .one {
+		left: 245px;
+	}
+	.navigation-item .two {
+		left: 339px;
+	}
+	.navigation-item .three {
+		left: 479px;
+	}
+	.navigation-item .four {
+		left: 610px;
+	}
+	.navigation-item .five {
+		left: 738px;
+	}
+	.navigation-container .logo {
+		padding-left: 0;
+	}
+	.menu .menu-item, .menu-item>ul>li {
+		font-size: 12px;
+		padding: 2px;
+	}
+	.icons-container i {
+		padding: 15px;
+		font-size: 22px;
+	}
+	.arrows {
+		width: 32px;
+		height: 32px;
+	}
+	.item .price {
+		font-size: 10px;
+	}
+	.actions .buy>p, .actions .like>p {
+		font-size: 10px;
+	}
+	.description-container {
+		flex-direction: column;
+	}
+	.description-container .text {
+		text-align: center;
+		width: auto;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+	.description-container .img {
+		padding-bottom: 20px;
+	}
+	.video-container .text {
+		padding: 40px;
+	}
+	.footer-container {
+		margin: 0 auto;
+		height: fit-content;
+		padding-bottom: 20px;
+	}
+	.contacts i {
+		display: none;
+	}
+	.subscribe button {
+		width: 105%;
+	}
+	.subscribe input {
+		width: 100%;
+	}
+	.copyright .social-media {
+		padding-left: 110px;
+	}
+	.copyright .solutions-logo {
+		padding-top: 10px;
+		height: 60px;
+	}
+}
+
+@media (max-width: 950px) {
+	.navigation-container .logo {
+		z-index: 3;
+		padding-left: 40px;
+	}
+	.navigation-container .navigation {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: black;
+		z-index: 2;
+		padding: 120px 0 0 0;
+		display: none;
+		text-align: right;
+	}
+	.navigation.active {
+		height: fit-content;
+		display: block;
+	}
+	.one, .two, .three, .four, .five {
+		display: none;
+	}
+	.one.active, .two.active, .three.active, .four.active, .five.active {
+		direction: rtl;
+		display: block;
+		padding-top: 15px;
+	}
+	.navigation-item .before {
+		display: none;
+	}
+	.menu>li>ul>li {
+		padding: 5px 5px 0 5px;
+	}
+	.menu>li>ul>li::before {
+		content: "•";
+		color: orange;
+		padding-right: 5px;
+	}
+	.navigation>li {
+		font-size: 20px;
+		padding-right: 70px;
+	}
+	.navigation .menu {
+		list-style: none;
+	}
+	.navigation li:hover .menu-container {
+		display: none;
+	}
+	.icons-container {
+		margin: 0 auto;
+	}
+	.icons-container i {
+		padding-right: 70px;
+	}
+	.burger {
+		z-index: 3;
+		margin-left: auto;
+		margin-right: 70px;
+		display: block;
+		padding: 9px 2px;
+		background: none;
+		border: 0;
+		cursor: pointer;
+	}
+	.burger.active .burger-item::before {
+		top: -12px;
+	}
+	.burger.active .burger-item::after {
+		bottom: -12px;
+	}
+	.burger-item {
+		display: block;
+		width: 30px;
+		height: 3px;
+		background-color: #fff;
+		font-size: 0;
+		color: transparent;
+		position: relative;
+	}
+	.burger-item::before,
+	.burger-item::after {
+		content: "";
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+		position: absolute;
+		left: 0;
+		z-index: 1px;
+	}
+	.burger .burger-item::before {
+		top: -8px;
+	}
+	.burger .burger-item::after {
+		bottom: -8px;
+	}
+	.navigation-container .icons-container {
+		width: auto;
+		padding-left: 40px;
+	}
+	.arrows {
+		top:  450px;
+		width: 30px;
+		height: 30px;
+	}
+	.prev {
+		left: 100px;
+	}
+	.next {
+		right: 100px;
+	}
+	.slider-container button {
+		left: 35%;
+	}
+	.goods-navigation i {
+		display: none;
+	}
+	.goods-navigation p {
+		font-size: 25px;
+	}
+	.goods .actions>div {
+		font-size: 9px;
+		padding: 0;
+	}
+	.goods .item .name, .goods .item .price {
+		font-size: 13px;
+	}
+	.goods .item .price {
+		height: 30px;
+		display: block;
+		text-align: center;
+	}
+	.item .price .new {
+		padding: 0;
+	}
+	.description-container, .instagram-container {
+		padding: 25px 0;
+	}
+	.information-container {
+		display: none;
+	}
+	.subscribe input {
+		width: 100%;
+	}
+	.subscribe .button {
+		width: 105%;
+	}
+	.footer-container {
+		flex-direction: row;
+	}
+	.copyright .logo, .copyright .solutions-logo {
+		height: 50px;
+		padding: 0;
+	}
+	.copyright .logo {
+		padding-left: 20px;
+	}
+	.copyright .solutions-logo {
+		padding-top: 15px;
+		padding-right: 20px;
+	}
+	.copyright .cards {
+		height: 30px;
+	}
+	.copyright .social-media {
+		padding-left: 120px;
+	}
+	.copyright .social-media i {
+		font-size: 20px;
 	}
 }
