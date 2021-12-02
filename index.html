@@ -38,7 +38,9 @@
 		</div>
 	</div>
 	<div class="navigation-container">
-		<img class="logo" src="img/logo.png" alt="logo">
+		<div class="logo">
+			<img src="img/logo.png" alt="logo">
+		</div>
 		<ul id="navigation" class="navigation">
 			<li class="navigation-item"><a id="a-one" href="#">ОДЯГ</a>
 				<div id="one" class="one menu-container">
@@ -167,8 +169,8 @@
 		<button class="button">ПЕРЕГЛЯНУТИ НОВИНКИ</button>
 	</div>
 	<div class="products-container">
-		<div class="row">
-			<div class="product">
+		<div class="big row">
+			<div class="text product">
 				<h2 >
 					НАШІ ТОВАРИ
 				</h2>
@@ -205,7 +207,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="big row">
 			<div class="img product">
 				<h5 class="choose">
 					ОБИРАЙ
@@ -239,7 +241,91 @@
 					ОБИРАЙ
 				</h5>
 				<h2 class="category">
-					РЮЗГРУЗКИ
+					РОЗГРУЗКИ
+				</h2>
+				<div class="all">
+					<h5>
+						УСІ ТОВАРИ
+					</h5>
+					<i class="fas fa-long-arrow-alt-right"></i>
+				</div>
+			</div>
+		</div>
+		<div class="small row">
+			<div class="product text">
+				<h2 >
+					НАШІ ТОВАРИ
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta turpis orci, sed ultrices velit viverra et. In vel ligula a lectus venenatis laoreet sed in lectus. Maecenas laoreet luctus congue. Etiam nec lorem ligula.
+				</p>
+			</div>
+			<div class="img product">
+				<h5 class="choose">
+					ОБИРАЙ
+				</h5>
+				<h2 class="category">
+					ОДЯГ
+				</h2>
+				<div class="all">
+					<h5>
+						УСІ ТОВАРИ
+					</h5>
+					<i class="fas fa-long-arrow-alt-right"></i>
+				</div>
+			</div>
+		</div>
+		<div class="small row">
+			<div class="img product">
+				<h5 class="choose">
+					ОБИРАЙ
+				</h5>
+				<h2 class="category">
+					МЕДИЦИНА
+				</h2>
+				<div class="all">
+					<h5>
+						УСІ ТОВАРИ
+					</h5>
+					<i class="fas fa-long-arrow-alt-right"></i>
+				</div>
+			</div>
+			<div class="img product">
+				<h5 class="choose">
+					ОБИРАЙ
+				</h5>
+				<h2 class="category">
+					ПІДСУМКИ
+				</h2>
+				<div class="all">
+					<h5>
+						УСІ ТОВАРИ
+					</h5>
+					<i class="fas fa-long-arrow-alt-right"></i>
+				</div>
+			</div>
+		</div>
+		<div class="small row">
+			<div class="img product">
+				<h5 class="choose">
+					ОБИРАЙ
+				</h5>
+				<h2 class="category">
+					РЮКЗАКИ
+				</h2>
+				<div class="all">
+					<h5>
+						УСІ ТОВАРИ
+					</h5>
+					<i class="fas fa-long-arrow-alt-right"></i>
+				</div>
+			</div>
+			<div class="img product">
+				<h5 class="choose">
+					ОБИРАЙ
+				</h5>
+				<h2 class="category">
+					РОЗГРУЗКИ
 				</h2>
 				<div class="all">
 					<h5>
@@ -258,6 +344,7 @@
 			<div class="goods-navigation">
 				<i class="fas fa-long-arrow-alt-left"></i>
 				<i class="fas fa-long-arrow-alt-right"></i>
+				<span class="before"></span>
 				<p>УСІ ТОВАРИ</p>
 			</div>
 		</div>
@@ -291,13 +378,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="item">
+			<div class="item phone-hide">
 				<div class="sale">
 					-40%
 				</div>
 				<img class="bag" src="img/goods.jpg" alt="">
 				<div class="name">
-					Lorem ipsum 
+					Lorem ipsum dolor sit amet
 				</div>
 				<div class="price">
 					<p class="new">
@@ -320,7 +407,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="item">
+			<div class="item hide">
 				<div class="new-item sale">
 					NEW
 				</div>
@@ -344,7 +431,36 @@
 					</div>
 				</div>
 			</div>
-			<div class="item">
+			<div class="item hide">
+				<div class="sale">
+					-20%
+				</div>
+				<img class="bag" src="img/goods.jpg" alt="">
+				<div class="name">
+					Lorem ipsum dolor sit amet, consectetur
+				</div>
+				<div class="price">
+					<p class="new">
+						853,00₴
+					</p>
+					<p class="old">
+						710,00₴
+					</p>
+				</div>
+				<div class="actions">
+					<div class="buy">
+						<span class="before"></span>
+						<p>ДО КОШИКА</p>
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+					<div class="like">
+						<span class="before"></span>
+						<p>В ОБРАНЕ</p>
+						<i class="fas fa-heart"></i>
+					</div>
+				</div>
+			</div>
+			<div class="item last">
 				<div class="sale">
 					-20%
 				</div>
@@ -378,12 +494,12 @@
 	<div class="description-container">
 		<div class="text">
 			<h2>
-				ЯКІСНЕ ТАКТИЧНЕ СПОРЯДЖЕННЯ ДЛЯ СПЕЦПІДРОЗДІЛІВ
+				ЯКІСНЕ ТАКТИЧНЕ СПОРЯДЖЕННЯ ДЛЯ<br>СПЕЦПІДРОЗДІЛІВ
 			</h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta turpis orci, sed ultrices velit viverra et. In vel ligula a lectus venenatis laoreet sed in lectus. Maecenas laoreet luctus congue. Etiam nec lorem ligula. Vivamus eget elit elit. Vestibulum sagittis sapien vitae tortor tincidunt efficitur. Duis sed imperdiet magna, sed commodo nisl. 
 			</p>
-			<p>
+			<p class="hide">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta turpis orci, sed ultrices velit viverra et. In vel ligula a lectus venenatis laoreet sed in lectus. Maecenas laoreet luctus congue. Etiam nec lorem ligula. Vivamus eget elit elit. Vestibulum sagittis sapien vitae tortor tincidunt efficitur. Duis sed imperdiet magna, sed commodo nisl. 
 			</p>
 		</div>
@@ -398,7 +514,7 @@
 				ЩЕ БІЛЬШЕ ЦІКАВОГО У НАШОМУ INSTAGRAM
 			</h2>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta turpis orci, sed ultrices velit viverra et. In vel ligula a lectus venenatis laoreet sed in lectus. Maecenas laoreet luctus congue. Etiam nec lorem ligula. Vivamus eget elit elit. Vestibulum sagittis sapien vitae tortor tincidunt efficitur.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta turpis orci, sed ultrices velit viverra et. In vel ligula a lectus venenatis laoreet sed in lectus.
 			</p>
 			<button class="button">
 				ПЕРЕЙТИ ДО INSTAGRAM
@@ -410,25 +526,25 @@
 					<span class="before"></span>
 					<p>@hofner.ukraine</p>
 				</div>
-				<div class="post">
+				<div class="post hide">
 					<span class="before"></span>
 					<p>@hofner.ukraine</p>
 				</div>
-				<div class="post">
+				<div class="post hide">
 					<span class="before"></span>
 					<p>@hofner.ukraine</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="post">
+				<div class="post hide">
 					<span class="before"></span>
 					<p>@hofner.ukraine</p>
 				</div>
-				<div class="post">
+				<div class="post hide">
 					<span class="before"></span>
 					<p>@hofner.ukraine</p>
 				</div>
-				<div class="post">
+				<div class="post hide">
 					<span class="before"></span>
 					<p>@hofner.ukraine</p>
 				</div>
@@ -441,73 +557,157 @@
 				ВСЯ ПРОДУКЦІЯ ПРОЙШЛА ВИПРОБУВАННЯ В ЗОНІ ООС (АТО)
 			</h2>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta turpis orci, sed ultrices velit viverra et. In vel ligula a lectus venenatis laoreet sed in lectus. Maecenas laoreet luctus congue. Etiam nec lorem ligula. Vivamus eget elit elit. Vestibulum sagittis sapien vitae tortor tincidunt efficitur. Duis sed imperdiet magna, sed commodo nisl. Aliquam rhoncus efficitur diam, eu mollis tellus consectetur et. Curabitur volutpat posuere ante ac pulvinar.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta turpis orci, sed ultrices velit viverra et. In vel ligula a lectus venenatis laoreet sed in lectus. Maecenas laoreet luctus congue. Etiam nec lorem ligula. Vivamus eget elit elit.
 			</p>
 		</div>
 		<div class="frame">
 			<span class="before"></span>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/EmAbrKn4FCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="725" height="325" src="https://www.youtube.com/embed/EmAbrKn4FCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
 	<div class="benefits-container">
-		<div class="row">
+		<div class="big row">
 			<div class="description">
 				<h2>
 					НАШІ ПЕРЕВАГИ
 				</h2>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque. Fusce a tortor libero
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas.
 				</p>
 			</div>
 			<div class="benefit">
-				<i class="fas fa-pencil-ruler"></i>
+				<div class="icon">
+					<i class="fas fa-pencil-ruler"></i>
+				</div>
 				<h3>
-					ДБАЙЛИВО ПРОБУМУЄМО ДИЗАЙН
+					ДБАЙЛИВО ПРОДУМУЄМО ДИЗАЙН
 				</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque. Fusce a tortor libero
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque.
 				</p>
 				<a href="">ЧИТАТИ БІЛЬШЕ</a>
 			</div>
 			<div class="benefit">
-				<i class="fas fa-comments"></i>
+				<div class="icon">
+					<i class="fas fa-comments"></i>
+				</div>
 				<h3>
 					ВРАХОВУЄМО ПОБАЖАННЯ БІЙЦІВ
 				</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque. Fusce a tortor libero
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque.
 				</p>
 				<a href="">ЧИТАТИ БІЛЬШЕ</a>
 			</div>
 		</div>
-		<div class="row">
+		<div class="big row">
 			<div class="benefit">
-				<i class="fas fa-bullseye"></i>
+				<div class="icon">
+					<i class="fas fa-bullseye"></i>
+				</div>
 				<h3>
 					НАША ЦІЛЬ - НАЙВИЩА ЯКІСТЬ
 				</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque. Fusce a tortor libero
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque.
 				</p>
 				<a href="">ЧИТАТИ БІЛЬШЕ</a>
 			</div>
 			<div class="benefit">
-				<i class="fas fa-tshirt"></i>
+				<div class="icon">
+					<i class="fas fa-tshirt"></i>
+				</div>
 				<h3>
 					ОРИГІНАЛЬНА ТКАНИНА І ФАКТУРА
 				</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque. Fusce a tortor libero
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque.
 				</p>
 				<a href="">ЧИТАТИ БІЛЬШЕ</a>
 			</div>
 			<div class="benefit">
-				<i class="fas fa-globe"></i>
+				<div class="icon">
+					<i class="fas fa-globe"></i>
+				</div>
 				<h3>
 					ДОСТАВКА ПО УКРАЇНІ І ЗА КОРДОН
 				</h3>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque. Fusce a tortor libero
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque.
+				</p>
+				<a href="">ЧИТАТИ БІЛЬШЕ</a>
+			</div>
+		</div>
+		<div class="small row">
+			<div class="description">
+				<h2>
+					НАШІ ПЕРЕВАГИ
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas.
+				</p>
+			</div>
+			<div class="benefit">
+				<div class="icon">
+					<i class="fas fa-pencil-ruler"></i>
+				</div>
+				<h3>
+					ДБАЙЛИВО ПРОДУМУЄМО ДИЗАЙН
+				</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque.
+				</p>
+				<a href="">ЧИТАТИ БІЛЬШЕ</a>
+			</div>
+		</div>
+		<div class="small row">
+			<div class="benefit">
+				<div class="icon">
+					<i class="fas fa-comments"></i>
+				</div>
+				<h3>
+					ВРАХОВУЄМО ПОБАЖАННЯ БІЙЦІВ
+				</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque.
+				</p>
+				<a href="">ЧИТАТИ БІЛЬШЕ</a>
+			</div>
+			<div class="benefit">
+				<div class="icon">
+					<i class="fas fa-bullseye"></i>
+				</div>
+				<h3>
+					НАША ЦІЛЬ - НАЙВИЩА ЯКІСТЬ
+				</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque.
+				</p>
+				<a href="">ЧИТАТИ БІЛЬШЕ</a>
+			</div>
+		</div>
+		<div class="small row">
+			<div class="benefit">
+				<div class="icon">
+					<i class="fas fa-tshirt"></i>
+				</div>
+				<h3>
+					ОРИГІНАЛЬНА ТКАНИНА І ФАКТУРА
+				</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque.
+				</p>
+				<a href="">ЧИТАТИ БІЛЬШЕ</a>
+			</div>
+			<div class="benefit">
+				<div class="icon">
+					<i class="fas fa-globe"></i>
+				</div>
+				<h3>
+					ДОСТАВКА ПО УКРАЇНІ І ЗА КОРДОН
+				</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lorem ex, bibendum quis est vitae, sollicitudin ornare sem. Nunc dictum ante ac tellus fermentum, nec fermentum mi viverra. Sed fermentum finibus nisl non egestas. Vivamus nisi enim, pharetra id dictum at, iaculis id neque.
 				</p>
 				<a href="">ЧИТАТИ БІЛЬШЕ</a>
 			</div>
@@ -557,39 +757,41 @@
 				<a href="">Lorem ipsum</a>
 			</div>
 		</div>
-		<div class="contacts">
-			<h4>
-				КОНТАКТИ
-			</h4>
-			<div class="contact">
-				<i class="fas fa-phone-alt"></i>					
-				<div class="text">
-					<b>
-						+38 (096) 812 00 13
-					</b>
-					<p>
-						Пн-Сб, 9:00-19:00
-					</p>
+		<div class="connection">
+			<div class="contacts">
+				<h4>
+					КОНТАКТИ
+				</h4>
+				<div class="contact">
+					<i class="fas fa-phone-alt"></i>					
+					<div class="text">
+						<p class="b">
+							+38 (096) 812 00 13
+						</p>
+						<p>
+							Пн-Сб, 9:00-19:00
+						</p>
+					</div>
+				</div>
+				<div class="contact">
+					<i class="fas fa-envelope"></i>
+					<div class="text">
+						<p class="b">
+							hofner.ukraine@gmail.com
+						</p>
+						<p>
+							Електронна адреса
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="contact">
-				<i class="fas fa-envelope"></i>
-				<div class="text">
-					<b>
-						hofner.ukraine@gmail.com
-					</b>
-					<p>
-						Електронна адреса
-					</p>
-				</div>
+			<div class="subscribe">
+				<h4>
+					ПІДПИСКА НА НОВИНИ ТА АКЦІЇ
+				</h4>
+				<input type="text" value="E-mail">
+				<button class="button">ОФОРМИТИ ПІДПИСКУ</button>
 			</div>
-		</div>
-		<div class="subscribe">
-			<h4>
-				ПІДПИСКА НА НОВИНИ ТА АКЦІЇ
-			</h4>
-			<input type="text" value="E-mail">
-			<button class="button">ОФОРМИТИ ПІДПИСКУ</button>
 		</div>
 	</div>
 	<div class="copyright">

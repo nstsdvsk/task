@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-/*Організація роботи бургера для девайсів з шириною екрану менше 950 пікселів*/
+/*Організація роботи бургера для девайсів з шириною екрану менше 768 пікселів*/
 document.getElementById('burger').onclick = function() {
   document.getElementById('burger').classList.toggle('active');
   document.getElementById('navigation').classList.toggle('active');
