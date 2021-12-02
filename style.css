@@ -1270,6 +1270,7 @@ html {
 		width: fit-content;
 	}
 	.footer-container .connection {
+		width: 100%;
 		justify-content: center;
 		padding-top: 40px;
 		font-size: 17px;
