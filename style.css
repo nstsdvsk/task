@@ -1450,7 +1450,7 @@ html {
 		height: 480px;
 	}
 	.copyright .logo, .copyright .solutions-logo, .copyright .cards, .copyright .social-media {
-		padding: 0;
+		padding: 5px 0 0 0;
 	}
 	.copyright .logo, .copyright .solutions-logo {
 		height: 45px
